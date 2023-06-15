@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Template Naiades</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f1f1f1;
+        }
+        * {
+         box-sizing: border-box;
+        }
+
+        /* importar fuentes */
+        @font-face{
+            font-family: font-parrafo;
+            src: url(fonts/HelveticaNeueLTPro-Lt.ttf);
+            font-style: normal;
+            font-weight: 400;
+        }
+
+        @font-face{
+            font-family: font-parrafo-bold;
+            src: url(fonts/HelveticaNeueLTPro-Bd.otf);
+            font-style: normal;
+            font-weight: 900;
+        }
+
+        p{
+            font-family: font-parrafo;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+        }
+        .logo{
+            position: absolute; top: 15%; left: 10%
+        }
+
+        .title{
+            font-size: 46px; 
+            margin: 0; 
+            padding: 0; 
+            color: #eeeeee; 
+            display: block; 
+            font-family: font-parrafo-bold;
+        }
+        
+        .column {
+            width: 60%;
+            padding: 24px;
+            box-sizing: border-box;
+            
+        }
+
+        .column2 {
+            width: 40%;
+            padding: 24px;
+            box-sizing: border-box;
+            
+        }
+
+        .column-video {
+            width: 50%;
+            padding: 26px;
+            box-sizing: border-box;
+        }
+
+        .text{
+            line-height: 1.2; 
+            color: #d7d5de;
+            font-size: 13.5px;
+            
+        }
+        .image {
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .footer{
+            display: flex; 
+            justify-content: space-between;
+        }
+
+        .footer-texto-right{
+            text-align: right; 
+            padding: 30px;
+        }
+
+        .footer-texto-left{
+            text-align: left; 
+            padding: 30px;
+        }
+        
+        @media (max-width: 600px) {
+
+            .hero{
+                height: 294px;
+            }
+
+            .responsive-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            }
+            .logo{
+                top: 5%;
+            }
+
+            .title{
+            font-size: 24px !important; 
+        }
+            .column {
+                width: 100% !important;
+                display: flex;
+                flex-direction: column;
+            }
+            .column2 {
+                width: 100% !important;;
+                display: flex;
+                flex-direction: column;
+                padding: 12px;
+            }
+
+            .column-video {
+            width: 100% !important;;
+            display: block;
+            text-align: center;
+        }
+        .footer{
+            display: flex; 
+            flex-direction: column !important;;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .footer-texto-right{
+            text-align: center !important; 
+            padding: 10px;
+            
+        }
+
+        .footer-texto-left{
+            text-align: center !important; 
+            padding: 10px;
+        }
+    }
+        
+    </style>
+
+</head>
+  <body style="margin: 0 auto; width: 100%; max-width: 600px; table-layout: fixed; background-color: #f4f4f4;">
+    <table cellpadding="0" cellspacing="0" border="0" width="100%" style="border-collapse: collapse;">
+        <table style="width: 100%;">
+            <tr style="position: relative;">
+                <td class="hero">
+                    <img
+                    class="responsive-image"
+                    src="https://i.ibb.co/qj1sS4q/background-hero.jpg" 
+                    alt="background-hero"
+                    width="100%"/>
+
+                    <a href="#" target="_blank" 
+                    class="logo">
+                        <img src="https://i.ibb.co/41r1Dwx/logo.png" alt="Logo empresa" width="100%" style="max-width: 120px;">
+                    </a>
+                </td>
+                <td style="position:absolute; left: 10%; bottom: 11%;">
+                    <button style="background-color: #23135f; color: white; text-transform: uppercase;
+                     font-size: 13px; padding-top: 5px; padding-bottom: 5px; padding-right: 12px; padding-left: 12px;
+                     border: none; font-family: font-parrafo; font-weight: 700;" >lunch</button>
+                     <h2 class="title">
+                        Lorem impsum
+                     </h2>
+                     <h2 class="title">
+                        dolor sit  amet
+                     </h2>
+                </td>
+            </tr>
+        </table>
+
+        
+
+    <table class="container" cellspacing="0" cellpadding="0">
+        <tr>
+            <td class="column" style="background-color: #fff;">
+                <p style=" line-height: 1.2; color: #828282;">
+                    <span style="font-weight: 700; color: #232323;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <p style=" line-height: 1.2; color: #828282; margin-top: 10px;">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+    
+                <p style="line-height: 1.2; color: #828282; margin-top: 10px;">
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    <span style="font-weight: 700; color: #232323;">
+                        Excepteur sint occaecat cupidatat non proident,
+                        sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </span> 
+                </p>
+            </td>
+            <td class="column2" align="center">
+                <img src="https://i.ibb.co/4VgKw3T/calendario.png" alt="Imagen" class="image">
+                <p style="margin-top: 5px; margin-bottom: 0; color: #23135f;  font-weight: 700; font-size: 17px;">March 3th | 12:00 PM</p>
+                <p style="margin-top: 2px; color: #232323;  font-weight: 700; font-size: 17px;">TBD</p>
+                <button style="background-color: #23135f; color: white; font-size: 15px; padding-top: 8px; padding-bottom: 8px; padding-right: 12px; padding-left: 12px; border: none; font-family: font-parrafo; font-weight: 700; margin-top: 10px; display: block; width: 100%;">Confirm attendance</button>
+            </td>
+        </tr>
+    </table>
+
+    <table class="container" cellspacing="0" cellpadding="0">
+        <tr style="background-image: url(https://i.ibb.co/fM2TXQR/background2.png); width:100%;">
+            <td class="column-video">
+                <img src="https://i.ibb.co/MR2tbRb/video.png"" alt="video" class="image"/>
+            </td>
+
+            <td class="column-video">
+                <p class="text">
+                    <span style="font-weight: 700;">Lorem ipsum dolor sit amet, consectetur adipiscing elit,</span> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+
+                <p class="text">
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table align="center">
+        <tr>
+            <td">
+                <h3 style="padding: 25px; text-align: center; font-size: 26px; color:#232323; font-family: font-parrafo; ">Speaker: <span style=" font-family: font-parrafo-bold; color: #23135f;">Lorem Ipsum</span> <span style="color:#23135f; font-weight: normal;">- Dolor sit amet</span></h3>
+            </td>
+        </tr>
+    </table>
+
+    <table style="width: 100%; " bgcolor="#7c55b5" align="center">
+        <tr class="footer">
+          <td class="footer-texto-left">
+            <p style="margin-bottom: 4px; color: white; text-transform: uppercase; font-size: 13.5px;">More Information:</p>
+            <p style="margin: 0; color: white;"> <span style="font-weight: 700; font-size: 13.5px;">Lorem Ipsum </span>| Vice President.</p>
+            <p style="margin: 0; color: #23135f; font-family:font-parrafo-bold; font-size:13.5px;">consectetur@loremipsum.com</p>
+          </td>
+
+          <td class="footer-texto-right">
+            <img src="https://i.ibb.co/vv65Jbd/logo2.png" alt="logo" style="max-width: 100%; margin-top:-12px; margin-bottom: -15px;">
+            <p style="margin: 0; color: white; margin-right: 6px; font-size: 13.5px;">Generic 2020</p>
+            <p style="color: white; margin: 0; margin-right: 5px; font-size: 13.5px;"> All rights reserved.</p>
+          </td>
+        </tr>
+      </table>
+    </table>
+  </body>
+</html>
